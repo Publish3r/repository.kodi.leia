@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.youtube.dl.starter" name="YouTube-DL Starter" version="1.1.1" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.youtube.dl" version="14.810.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item" library="addon.py">
+    <item>
+      <label>YouTube-DL Starter</label>
+      <visible>Window.IsActive(10025)</visible>            
+    </item>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">YouTube-DL</summary>
+    <summary lang="de">YouTube-DL</summary>
+    <description lang="en">Extension for youtube-dl.[CR][CR]Video Downloader/Player:[CR]Enter url to download or play video. Or just download from the context menu.</description>
+    <description lang="de">Erweiterung für youtube-dl.[CR][CR]Video Downloader/Player:[CR]Einfach die URL eingeben und aussuchen, ob das Video runtergeladen oder abgespielt werden soll. Oder einfach aus dem Kontextmenue herunterladen.[CR][CR]WICHTIG : Wer es nutzt sollte sich vorher über die Legalität informieren. Ich übernehme da keine Verantwortung!</description>
+    <language>en de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <screenshot>resources/screenshot001.png</screenshot>
+        <screenshot>resources/screenshot002.png</screenshot>
+        <screenshot>resources/screenshot003.png</screenshot>
+        <screenshot>resources/screenshot004.png</screenshot>
+    </assets>
+  </extension>
+</addon>

@@ -1,0 +1,4 @@
+1.1.1 - Vorschaubilder aktualisiert.
+        Zur Publish3r Repository hinzugefügt. 
+
+1.0.1 - Release.

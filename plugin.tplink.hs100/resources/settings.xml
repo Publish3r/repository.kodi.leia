@@ -1,0 +1,32 @@
+﻿<settings>
+    <category label="30000">
+        <setting label="30001" type="text" id="ip" default="127.0.0.1"/>
+        <setting label="30002" type="text" id="port" default="9999"/>
+        <setting label="30003" type="text" id="name" default="TP LINK 1"/>
+        <setting label="30004" type="bool" id="onoff" default="true"/>
+    </category>
+    <category label="32000">
+        <setting label="32001" type="text" id="ip2" default="127.0.0.1"/>
+        <setting label="32002" type="text" id="port2" default="9999"/>
+        <setting label="32003" type="text" id="name2" default="TP LINK 2"/>
+        <setting label="32004" type="bool" id="onoff2" default="false"/>
+    </category>
+    <category label="33000">
+        <setting label="33001" type="text" id="ip3" default="127.0.0.1"/>
+        <setting label="33002" type="text" id="port3" default="9999"/>
+        <setting label="33003" type="text" id="name3" default="TP LINK 3"/>
+        <setting label="33004" type="bool" id="onoff3" default="false"/>
+    </category>
+    <category label="34000">
+        <setting label="34001" type="text" id="ip4" default="127.0.0.1"/>
+        <setting label="34002" type="text" id="port4" default="9999"/>
+        <setting label="34003" type="text" id="name4" default="TP LINK 4"/>
+        <setting label="34004" type="bool" id="onoff4" default="false"/>
+    </category>
+    <category label="35000">
+        <setting label="35001" type="text" id="ip5" default="127.0.0.1"/>
+        <setting label="35002" type="text" id="port5" default="9999"/>
+        <setting label="35003" type="text" id="name5" default="TP LINK 5"/>
+        <setting label="35004" type="bool" id="onoff5" default="false"/>
+    </category>
+</settings>

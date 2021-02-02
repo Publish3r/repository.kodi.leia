@@ -1,0 +1,146 @@
+<addons>
+
+<addon id="plugin.soest.page" name="soestPage" version="1.7" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">soestPage</summary>
+    <description lang="de">Alles rund um die Stadt- und den Kreis Soest.</description>
+    <disclaimer lang="de"></disclaimer>
+    <language>de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.tplink.hs100" name="TP Link HS100" version="1.0.2" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TP Link HS100</summary>
+    <summary lang="de">TP Link HS100</summary>
+    <description lang="en">TP Link HS100 Control Panel</description>
+    <description lang="de">TP Link HS100 Control Panel</description>
+    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="de"></disclaimer>
+    <language>en</language>
+    <language>de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.philizz.media" name="Philizz Media" version="2.4" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.youtube.dl" version="14.810.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Philizz Media</summary>
+    <description lang="en">[B]Philizz Videomixes[/B][CR][CR]Website: philizz.com[CR]Twitter: twitter.com/philizz[CR]Facebook: facebook.com/philizzmedia</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot001.png</screenshot>
+        <screenshot>resources/screenshot002.png</screenshot>
+        <screenshot>resources/screenshot003.png</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.wwenetwork" name="WWE Network" version="2020.11.22" provider-name="lunartic + freyta + Publish3r">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="inputstream.adaptive" version="2.0.10"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Watch content from the WWE Network.</summary>
+        <description lang="en_GB">If you're having issues with your WWE Network live stream: Enable proxy in addon settings.</description>
+        <disclaimer lang="en_GB">Requires a WWE Network account.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://watch.wwe.com/</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.youtube.dl.starter" name="YouTube-DL Starter" version="1.1.1" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.youtube.dl" version="14.810.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item" library="addon.py">
+    <item>
+      <label>YouTube-DL Starter</label>
+      <visible>Window.IsActive(10025)</visible>            
+    </item>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">YouTube-DL</summary>
+    <summary lang="de">YouTube-DL</summary>
+    <description lang="en">Extension for youtube-dl.[CR][CR]Video Downloader/Player:[CR]Enter url to download or play video. Or just download from the context menu.</description>
+    <description lang="de">Erweiterung für youtube-dl.[CR][CR]Video Downloader/Player:[CR]Einfach die URL eingeben und aussuchen, ob das Video runtergeladen oder abgespielt werden soll. Oder einfach aus dem Kontextmenue herunterladen.[CR][CR]WICHTIG : Wer es nutzt sollte sich vorher über die Legalität informieren. Ich übernehme da keine Verantwortung!</description>
+    <language>en de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <screenshot>resources/screenshot001.png</screenshot>
+        <screenshot>resources/screenshot002.png</screenshot>
+        <screenshot>resources/screenshot003.png</screenshot>
+        <screenshot>resources/screenshot004.png</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="repository.publish3r" name="Publish3r Repository" version="2021.1" provider-name="Publish3r">
+	<extension point="xbmc.addon.repository" name="Publish3r">
+		<info compressed="true">https://raw.githubusercontent.com/Publish3r/repository.kodi.leia/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Publish3r/repository.kodi.leia/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Publish3r/repository.kodi.leia/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Publish3r's Official Leia Repository</summary>
+		<summary lang="de">Publish3r's Offizielles Leia Repository</summary>
+		<description lang="en">Publish3r's development:[CR][CR]Support in the Kodinerds forum.[CR]https://www.kodinerds.net</description>
+		<description lang="de">Publish3r's development:[CR][CR]Support im Kodinerds Forum.[CR]https://www.kodinerds.net</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+</addons>

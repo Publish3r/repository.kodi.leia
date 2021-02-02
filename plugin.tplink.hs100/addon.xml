@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.tplink.hs100" name="TP Link HS100" version="1.0.2" provider-name="Publish3r">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TP Link HS100</summary>
+    <summary lang="de">TP Link HS100</summary>
+    <description lang="en">TP Link HS100 Control Panel</description>
+    <description lang="de">TP Link HS100 Control Panel</description>
+    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="de"></disclaimer>
+    <language>en</language>
+    <language>de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>

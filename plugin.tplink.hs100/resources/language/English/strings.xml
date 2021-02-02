@@ -1,0 +1,28 @@
+﻿<strings>
+    <string id="30000">TP LINK 1</string>
+    <string id="30001">IP</string>
+    <string id="30002">Port</string>
+    <string id="30003">Name</string>
+    <string id="30004">Show / Hide</string>
+    <string id="32000">TP LINK 2</string>
+    <string id="32001">IP</string>
+    <string id="32002">Port</string>
+    <string id="32003">Name</string>
+    <string id="32004">Show / Hide</string>
+    <string id="33000">TP LINK 3</string>
+    <string id="33001">IP</string>
+    <string id="33002">Port</string>
+    <string id="33003">Name</string>
+    <string id="33004">Show / Hide</string>
+    <string id="34000">TP LINK 4</string>
+    <string id="34001">IP</string>
+    <string id="34002">Port</string>
+    <string id="34003">Name</string>
+    <string id="34004">Show / Hide</string>
+    <string id="35000">TP LINK 5</string>
+    <string id="35001">IP</string>
+    <string id="35002">Port</string>
+    <string id="35003">Name</string>
+    <string id="35004">Show / Hide</string>
+    <string id="39000">Settings</string>
+</strings>
