@@ -12,14 +12,10 @@ EVENT_BASE_URL = 'https://dce-frontoffice.imggaming.com/api/v2/event/'
 
 getsettings = xbmcaddon.Addon(id="plugin.video.wwenetwork")
 proxymodus = getsettings.getSetting("proxymodus")
-
-def getproxy():
-    r = requests.get('https://pastebin.com/raw/TDw1YZnP')
-    proxy = re.compile('"(.+?)"').findall(r.content)
-    return random.choice(proxy).decode('base64').decode('utf-8')
+proxy = getsettings.getSetting("proxy")
 
 proxies = {
-    'https': 'https://' + getproxy()
+    'https': 'https://'+proxy+''
 }
 
 class Account:

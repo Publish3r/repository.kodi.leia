@@ -49,7 +49,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.wwenetwork" name="WWE Network" version="2020.11.22" provider-name="lunartic + freyta + Publish3r">
+<addon id="plugin.video.wwenetwork" name="WWE Network" version="2022.05.21" provider-name="lunartic + freyta + Publish3r">
     <requires>
         <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.requests" version="2.9.1"/>
