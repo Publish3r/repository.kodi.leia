@@ -1,4 +1,4 @@
-﻿import sys,xbmcaddon,os,requests,xbmc,xbmcgui,base64,urllib,urllib2,re,xbmcplugin
+﻿import sys,xbmcaddon,os,requests,xbmc,xbmcgui,base64,urllib,urllib2,re,xbmcplugin,json
 import YDStreamUtils
 import YDStreamExtractor
 
@@ -48,6 +48,36 @@ ghij = "cG9zdGltZy5jYw=="
 ghij = ghij.encode("ascii")
 ghij = base64.b64decode(ghij)
 ghij = ghij.decode("ascii")
+
+hijk = "bS8="
+hijk = hijk.encode("ascii")
+hijk = base64.b64decode(hijk)
+hijk = hijk.decode("ascii")
+
+ijkl = "bS9wbGF5ZXIv"
+ijkl = ijkl.encode("ascii")
+ijkl = base64.b64decode(ijkl)
+ijkl = ijkl.decode("ascii")
+
+jklm = "Y2RuLWNm"
+jklm = jklm.encode("ascii")
+jklm = base64.b64decode(jklm)
+jklm = jklm.decode("ascii")
+
+klmn = "cGxheQ=="
+klmn = klmn.encode("ascii")
+klmn = base64.b64decode(klmn)
+klmn = klmn.decode("ascii")
+
+lmno = "bTN1OA=="
+lmno = lmno.encode("ascii")
+lmno = base64.b64decode(lmno)
+lmno = lmno.decode("ascii")
+
+mnop = "anNvbj9kaXNhYmxlX3BvcG91dHM9MSZkaXNhYmxlX2FuYWx5dGljcz0wJnByZWxvYWQ9YXV0byZkaXNhYmxlX2xhcmdlcl9wbGF5ZXI9ZmFsc2UmY29udHJvbGxlcj1odWJzJmFjdGlvbj1zaG93JnR5cGU9aW5saW5lJnY9NC4zLjY="
+mnop = mnop.encode("ascii")
+mnop = base64.b64decode(mnop)
+mnop = mnop.decode("ascii")
 
 def MENU():
     addDir('Yearmixes','-',3,icon,'','Yearmixes')
@@ -234,10 +264,10 @@ def addLink(name,url,image,desc,urlType,fanart):
     ok=True
     liz=xbmcgui.ListItem(name)
     if not "mp4" in url:
-        url = sys.argv[0]+"?url="+urllib.parse.quote_plus(url)+"&mode=99&name="+name+"&description="+desc+"&iconimage="+image
+        url = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode=99&name="+name+"&description="+desc+"&iconimage="+image
         liz.setProperty('IsPlayable','false')
     elif "mp4.urlset" in url:
-        url = sys.argv[0]+"?url="+urllib.parse.quote_plus(url)+"&mode=99&name="+name+"&description="+desc+"&iconimage="+image
+        url = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode=99&name="+name+"&description="+desc+"&iconimage="+image
         liz.setProperty('IsPlayable','false')
     else:
         url = url
@@ -382,7 +412,14 @@ elif mode==99:
     except:
         xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%('[B]Error[/B]', 'Video not found.', 5000, addonicon))
     if bcde in url:
-        url = (url+"|"+efgh).replace(cdef, defg)
+        url = url.replace(cdef, defg)
+        url = url.replace(hijk, ijkl)
+        url = url.replace(jklm, klmn)
+        url = url.replace(lmno, mnop)
+        url = requests.get(url)
+        url = url.json()
+        url = url['payload']['chapters'][0]['sources']['hls'][0]['url']
+        url = url+"|"+efgh
     listitem=xbmcgui.ListItem(title)
     listitem.setInfo( type="Video", infoLabels={ "Title": title, "plot": plot } )
     listitem.setArt({'icon': pic, 'thumb': pic})
