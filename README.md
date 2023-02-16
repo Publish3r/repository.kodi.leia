@@ -2,4 +2,4 @@
 
 Publish3r's Official Kodi Repository
 
-- working on Kodi 18.x (Leia)
+- working on Kodi 18.x (Leia) and 17.x (Krypton)
